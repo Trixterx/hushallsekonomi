@@ -8,10 +8,7 @@ namespace hushallsekonomi
     {
         public int Id { get; set; }
         public double Sum { get; set; }
-
-        /// <summary>
-        /// true = income
-        /// </summary>
-        public bool Type { get; set; }
+        public BankAccount From { get; set; }
+        public BankAccount To { get; set; }
     }
 }
