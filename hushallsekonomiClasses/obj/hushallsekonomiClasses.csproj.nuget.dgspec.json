@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {}
+    "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
+    "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+        "projectUniqueName": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
         "projectName": "hushallsekonomiClasses",
-        "projectPath": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
-        "packagesPath": "C:\\Users\\AA17352\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\obj\\",
+        "projectPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+        "packagesPath": "C:\\Users\\hoffm\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AA17352\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hoffm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

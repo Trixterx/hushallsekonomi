@@ -10,12 +10,6 @@ namespace hushallsekonomi
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public double Salary { get; set; }
-
         public Bank Bank { get; set; }
-
-        public BankAccount GetAccount(string name)
-        {
-
-        }
     }
 }

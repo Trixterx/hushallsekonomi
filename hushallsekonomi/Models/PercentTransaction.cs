@@ -4,7 +4,8 @@ using System.Text;
 
 namespace hushallsekonomi.Models
 {
-    class PercentTransaction : Transaction
+    public class PercentTransaction : Transaction
     {
+        public double SumInCash { get; set; }
     }
 }

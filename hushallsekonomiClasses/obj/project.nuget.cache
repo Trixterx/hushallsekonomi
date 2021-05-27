@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "nLcDXYBujB4FNtkG56OZmnRODMDc6hcBGFlyBub3O3zfo1RR3vQFdTifTR7nnFwqfmMugTszDePtAj/fPpod4Q==",
+  "dgSpecHash": "1OTpTrtH1zosOwBuwTWjJGm8+VaUur+tg+SVH4jz1Oip3guvl3aKv4xNvzrNUWcU3q4iSJVsQdCunip9YGXBEw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+  "projectFilePath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\AA17352\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\AA17352\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\AA17352\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512"
+    "C:\\Users\\hoffm\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\hoffm\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\hoffm\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512"
   ],
   "logs": []
 }

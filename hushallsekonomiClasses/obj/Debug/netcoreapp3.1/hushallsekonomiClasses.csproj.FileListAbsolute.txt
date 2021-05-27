@@ -1,9 +1,9 @@
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.deps.json
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.dll
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.pdb
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.csprojAssemblyReference.cache
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.AssemblyInfoInputs.cache
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.AssemblyInfo.cs
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.csproj.CoreCompileInputs.cache
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.dll
-C:\Users\AA17352\OneDrive - Kungälvs kommun\System\Desktop\.NET\Projects\mrhoffmann\hushallsekonomi\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.pdb
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.deps.json
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.dll
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\bin\Debug\netcoreapp3.1\hushallsekonomiClasses.pdb
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.AssemblyInfoInputs.cache
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.AssemblyInfo.cs
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.csproj.CoreCompileInputs.cache
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.dll
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.pdb
+D:\Documents\Hushållsekonom\a\andrei\hushallsekonomiClasses\obj\Debug\netcoreapp3.1\hushallsekonomiClasses.csprojAssemblyReference.cache
