@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Hushållsekonomi\\hushallsekonomi\\hushallsekonomi.csproj": {}
+    "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomi\\hushallsekonomi.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Hushållsekonomi\\hushallsekonomi\\hushallsekonomi.csproj": {
+    "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomi\\hushallsekonomi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Hushållsekonomi\\hushallsekonomi\\hushallsekonomi.csproj",
+        "projectUniqueName": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomi\\hushallsekonomi.csproj",
         "projectName": "hushallsekonomi",
-        "projectPath": "D:\\Documents\\Hushållsekonomi\\hushallsekonomi\\hushallsekonomi.csproj",
-        "packagesPath": "C:\\Users\\hoffm\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Hushållsekonomi\\hushallsekonomi\\obj\\",
+        "projectPath": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomi\\hushallsekonomi.csproj",
+        "packagesPath": "C:\\Users\\AA17352\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AA17352\\OneDrive - Kungälvs kommun\\System\\Desktop\\.NET\\Projects\\mrhoffmann\\hushallsekonomi\\hushallsekonomi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hoffm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AA17352\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
