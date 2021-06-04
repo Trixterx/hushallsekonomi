@@ -3,8 +3,6 @@ using hushallsekonomi.Models;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 
 namespace hushallsekonomiUnitTests
 {
@@ -158,7 +156,7 @@ namespace hushallsekonomiUnitTests
             if (expenditure != null && disaster != null && savings != null)
             {
                 //sätt in månadspengen :)
-                expenditure.Deposit(new Transaction() { Sum = u.Salary });
+                expenditure.Deposit(new Transaction() { Sum = u.Salary, TransactionType = TransactionType.In, Message = "Lön" });
 
                 //alla utgifter
                 var transaction = new Transaction()
@@ -168,32 +166,50 @@ namespace hushallsekonomiUnitTests
                 };
 
                 //genomför alla transaktioner
-                var transactions = new Transaction[]
+                var expenses = new Transaction[]
                 {
-                    new Transaction() {Sum = 8900, TransactionType = TransactionType.Out}, //hyra
-                    new Transaction() {Sum = 89, TransactionType = TransactionType.Out}, //netflix
-                    new Transaction() {Sum = 99, TransactionType = TransactionType.Out}, //mobil
-                    new Transaction() {Sum = 199, TransactionType = TransactionType.Out}, //bredband
-                    new Transaction() {Sum = 1200, TransactionType = TransactionType.Out}, //mat
-                    new Transaction() {Sum = 600, TransactionType = TransactionType.Out}, //förbrukningsvaror
-                    new Transaction() {Sum = 45, TransactionType = TransactionType.Out}, //bankavgift
-                    new Transaction() {Sum = 1000, TransactionType = TransactionType.Out}, //pension
-                    new Transaction() {Sum = 350, TransactionType = TransactionType.Out}, //gym
-                    new Transaction() {Sum = 75, TransactionType = TransactionType.Out} //hemförsäkring
+                    new Transaction() {Sum = 8900,  TransactionType = TransactionType.Out, Message = "Hyra"},
+                    new Transaction() {Sum = 89,    TransactionType = TransactionType.Out, Message = "Netflix"},
+                    new Transaction() {Sum = 99,    TransactionType = TransactionType.Out, Message = "Mobilabonnemang"},
+                    new Transaction() {Sum = 199,   TransactionType = TransactionType.Out, Message = "Bredband"},
+                    new Transaction() {Sum = 1200,  TransactionType = TransactionType.Out, Message = "Mat"},
+                    new Transaction() {Sum = 600,   TransactionType = TransactionType.Out, Message = "Förbrukningsvaror"},
+                    new Transaction() {Sum = 45,    TransactionType = TransactionType.Out, Message = "Bankavgift"},
+                    new Transaction() {Sum = 1000,  TransactionType = TransactionType.Out, Message = "Pension"},
+                    new Transaction() {Sum = 350,   TransactionType = TransactionType.Out, Message = "Gym"},
+                    new Transaction() {Sum = 75,    TransactionType = TransactionType.Out, Message = "Hemförsäkring"}
                 };
 
-                foreach (var tr in transactions) expenditure.Withdraw(tr);
+                expenditure.PrepareBudgetReport();
+                foreach (var tr in expenses)
+                {
+                    expenditure.Withdraw(tr);
+                }
 
-                //genomför överföringar
-                var expectSavingsSum = expenditure.Balance * 0.10;
-                b.TransferMoney(expectSavingsSum, expenditure.Id, savings.Id); //Spar (10%)
-                var expectDisasterSum = expenditure.Balance * 0.25;
-                b.TransferMoney(expectDisasterSum, expenditure.Id, disaster.Id); //Oanade utgifter (25%)
+                var percentTransactions = new PercentTransaction[]
+                {
+                    new PercentTransaction()
+                    {
+                        Sum = 0.10,
+                        TransactionType = TransactionType.Out
+                    },
+                    new PercentTransaction()
+                    {
+                        Sum = 0.25,
+                        TransactionType = TransactionType.Out
+                    }
+                };
 
-                //kontrollera att alla värden är korrekta
+                var expectSavingsSum = expenditure.Balance * percentTransactions[0].Sum;
+                b.TransferMoney(percentTransactions[0], expenditure.Id, savings.Id);
+
+                var expectDisasterSum = expenditure.Balance * percentTransactions[1].Sum;
+                b.TransferMoney(percentTransactions[1], expenditure.Id, disaster.Id);
+
                 Assert.AreEqual(savings.Balance, expectSavingsSum);
                 Assert.AreEqual(disaster.Balance, expectDisasterSum);
-                Assert.AreEqual(expenditure.Balance, 1311.525d);
+                Assert.AreEqual(1311.525d, expenditure.Balance);
+                expenditure.CloseReport();
             }
             else
             {

@@ -231,11 +231,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+      "projectUniqueName": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
       "projectName": "hushallsekonomiClasses",
-      "projectPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+      "projectPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
       "packagesPath": "C:\\Users\\hoffm\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\obj\\",
+      "outputPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hoffm\\AppData\\Roaming\\NuGet\\NuGet.Config",

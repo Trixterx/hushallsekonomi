@@ -44,5 +44,9 @@
         /// The balance on the account after the transaction has been performed.
         /// </summary>
         public double BalanceAfterTransaction { get; set; }
+        /// <summary>
+        /// Publish a message with your transaction.
+        /// </summary>
+        public string Message { get; set; }
     }
 }

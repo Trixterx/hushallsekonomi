@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     public static class Helpers
     {
@@ -37,6 +38,24 @@
                 return name[0].ToString().ToUpper() + name[1..];
             }
             return name;
+        }
+
+        public static int LongestMessage(Transaction[] p0)
+        {
+            if (p0 != null)
+            {
+                return p0.OrderByDescending(s => s.Message.Length).First().Message.Length;
+            }
+            return 0;
+        }
+
+        public static int LongestSum(Transaction[] p0)
+        {
+            if (p0 != null)
+            {
+                return p0.OrderByDescending(s => s.Sum.ToString().Length).First().Sum.ToString().Length;
+            }
+            return 0;
         }
     }
 }

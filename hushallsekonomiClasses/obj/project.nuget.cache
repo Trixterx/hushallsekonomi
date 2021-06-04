@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1OTpTrtH1zosOwBuwTWjJGm8+VaUur+tg+SVH4jz1Oip3guvl3aKv4xNvzrNUWcU3q4iSJVsQdCunip9YGXBEw==",
+  "dgSpecHash": "PshEObKssaJ88sEdwtHumTsAZ+zJsMCeTqOijXwu7r4wiInOeBQ47FpbPoDmL82iPFk0Em1Pp7pqTCAugk+7xg==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+  "projectFilePath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hoffm\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\hoffm\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",

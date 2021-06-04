@@ -1,8 +1,9 @@
-﻿using System;
-using hushallsekonomi.Models;
-using System.Collections.Generic;
-using System.Linq;
+﻿using hushallsekonomi.Models;
 using hushallsekonomiClasses.Helpers;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace hushallsekonomi
 {
@@ -45,6 +46,8 @@ namespace hushallsekonomi
         /// The type of bank account this is.
         /// </summary>
         public AccountType Type { get; set; }
+
+        private List<string> ReportContent { get; set; } = new List<string>();
 
         /// <summary>
         /// Make a withdrawal.
@@ -153,7 +156,97 @@ namespace hushallsekonomi
 
             Balance += transaction.Sum;
             Transactions.Add(transaction);
+            ReportContent.Add($"<tr><td>{transaction.Message}</td><td style=\"text-align:right\">{transaction.Sum}</td><td></td><td></td><td></td></tr>");
             return true;
+        }
+
+        /// <summary>
+        /// Run the prepare to delete earlier report and write the basic header to it. <see cref="WriteReportHeaders"/>
+        /// </summary>
+        public void PrepareBudgetReport()
+        {
+            File.Delete(Logging.BudgetReportPath);
+            WriteReportHeaders();
+        }
+
+        /// <summary>
+        /// Write all transaction data to the budget report collection
+        /// </summary>
+        private void WriteBudgetExpenses()
+        {
+            var transactions = Transactions.Where(x => x.TransactionType == TransactionType.Out && !(x is PercentTransaction));
+
+            if (transactions != null)
+            {
+                foreach (var tr in transactions)
+                {
+                    ReportContent.Add($"<tr><td>{tr.Message}</td><td></td><td style=\"text-align:right\">{tr.Sum}</td><td></td><td></td></tr>");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Write all calculated transaction data to the budget report collection
+        /// </summary>
+        private void WriteCalculatedBudgetReport()
+        {
+            var transactions = Transactions.Where(x => x.TransactionType == TransactionType.Out && x is PercentTransaction);
+
+            if (transactions != null)
+            {
+                foreach (var tr in transactions)
+                {
+                    ReportContent.Add($"<tr><td>{tr.To.Type.ToString()} ({tr.Sum * 100}%)</td><td></td><td></td><td style=\"text-align:right\">{tr.Sum * 100}%</td><td></td></tr>");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Write necessary html headers to the budget report file.
+        /// </summary>
+        private void WriteReportHeaders()
+        {
+            Logging.Write(new string[] {
+                "<!DOCTYPE html>",
+                "<html lang=\"en\">",
+                "<head>",
+                "<style>",
+                "table{ border-collapse: collapse} table tbody tr:nth-child(odd){background:#f4f4f4} table tbody td{border:solid 1px #ccc}",
+                "</style>",
+                "</head>",
+                "<body>",
+                "<table style=\"width:40%;max-width:400px;margin:0 auto\"><thead><tr style=\"font-weight: bolder\">",
+                "<td>Post",
+                "</td><td>Inkomst",
+                "</td><td>Utgift",
+                "</td><td>Utgift %",
+                "</td><td>Kvar</td>",
+                "</tr>",
+                "<tbody>",
+                "<tr>",
+                "<td style=\"font-weight: bolder\">Inkomst</td><td></td><td></td><td></td><td></td>",
+                "</tr>"
+            });
+        }
+
+        /// <summary>
+        /// Concatenate all earlier results from working on this account
+        /// </summary>
+        public void CloseReport()
+        {
+            WriteBudgetExpenses();
+            ReportContent.Add("<tr><td style=\"font-weight: bolder\">Kalkylerade utgifter</td><td></td><td></td><td></td><td></td></tr>");
+            WriteCalculatedBudgetReport();
+            ReportContent.Add($"<tr><td style=\"font-weight: bolder\">Cash kvar:</td><td colspan=\"3\"></td><td style=\"text-align:right;font-weight:bolder\">{Balance}</td></tr>");
+            ReportContent.AddRange(new string[] {
+                "</tbody></table>",
+                "</html>"
+            }); 
+
+            foreach(string s in ReportContent)
+            {
+                Logging.Write(s);
+            }
         }
 
         /// <summary>

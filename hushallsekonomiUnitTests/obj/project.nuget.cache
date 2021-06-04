@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pDWdSCD53ji2DG8fee+NLYhSbc5GmAFJTnN2+Ex2+wgu0NASwnGAA0ZuP1lyy/pp0QV9Q1QxGhFQA/emq0Am+Q==",
+  "dgSpecHash": "mrfTN0o1O8uGm72qttaAxXVfqCBrclDFwc4Gg5MZFXqqSxHPbMOMOg+JxKUOZL0gmuwd7/rqAeOHXjVmh2AyVA==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
+  "projectFilePath": "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hoffm\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\hoffm\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

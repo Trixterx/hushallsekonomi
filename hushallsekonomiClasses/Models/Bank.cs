@@ -1,7 +1,8 @@
+using hushallsekonomi.Models;
+using hushallsekonomiClasses.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using hushallsekonomiClasses.Helpers;
 
 namespace hushallsekonomi
 {
@@ -88,6 +89,45 @@ namespace hushallsekonomi
                 {
                     fromAccount.Balance -= sum;
                     toAccount.Balance += sum;
+                    
+                    return true;
+                }
+            }
+            catch (Exception e)
+            {
+                Logging.Log(e);
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// Transfer money from account to account
+        /// </summary>
+        /// <param name="sum">amount of money</param>
+        /// <param name="fromAccId">from account id</param>
+        /// <param name="toAccId">to account id</param>
+        /// <returns>True if the money transfer is successfull</returns>
+        public bool TransferMoney(Transaction transaction, int fromAccId, int toAccId)
+        {
+            var fromAccount = GetAccount(fromAccId);
+            var toAccount = GetAccount(toAccId);
+
+            var sum = transaction.Sum;
+
+            if(transaction is PercentTransaction)
+            {
+                sum = fromAccount.Balance * sum;
+            }
+
+            try
+            {
+                if (HasBalance(fromAccount, sum))
+                {
+                    fromAccount.Balance -= sum;
+                    toAccount.Balance += sum;
+                    transaction.From = fromAccount;
+                    transaction.To = toAccount;
+                    fromAccount.Transactions.Add(transaction);
 
                     return true;
                 }

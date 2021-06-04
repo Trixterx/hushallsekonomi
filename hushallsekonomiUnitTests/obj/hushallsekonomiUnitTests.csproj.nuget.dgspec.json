@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj": {}
+    "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
+    "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+        "projectUniqueName": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
         "projectName": "hushallsekonomiClasses",
-        "projectPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
+        "projectPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj",
         "packagesPath": "C:\\Users\\hoffm\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\obj\\",
+        "outputPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hoffm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj": {
+    "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
+        "projectUniqueName": "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
         "projectName": "hushallsekonomiUnitTests",
-        "projectPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
+        "projectPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\hushallsekonomiUnitTests.csproj",
         "packagesPath": "C:\\Users\\hoffm\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiUnitTests\\obj\\",
+        "outputPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hoffm\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
-                "projectPath": "D:\\Documents\\Hushållsekonom\\a\\andrei\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj"
+              "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj": {
+                "projectPath": "D:\\Desktop\\New folder\\main\\hushallsekonomiClasses\\hushallsekonomiClasses.csproj"
               }
             }
           }
